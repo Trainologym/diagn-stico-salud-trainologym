@@ -922,7 +922,7 @@ function renderInforme(){
 function empezar(){ renderProf(); show("s-perfil","¿Cuál es tu profesión?"); $("meta").textContent="Perfil"; track("inicio"); }
 $("go").onclick = empezar;
 $("go2").onclick = empezar;
-$("profNext").onclick = ()=>{ renderQ(); show("s-q"); track("perfil_elegido", {prof: state.prof && state.prof.v}); };
+$("profNext").onclick = ()=>{ renderQ(); show("s-q"); track("perfil_" + (state.prof ? state.prof.v : "sin_elegir")); };
 $("qBack").onclick = ()=>{ if(state.i>0){ state.i--; renderQ(); } };
 
 $("datosNext").onclick = ()=>{
