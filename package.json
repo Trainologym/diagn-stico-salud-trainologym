@@ -1,0 +1,21 @@
+{
+  "name": "diagnostico-salud-trainologym",
+  "version": "1.0.0",
+  "description": "Diagnóstico de Visibilidad Profesional — Trainologym",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build needed'",
+    "lint": "echo 'No linting configured'"
+  },
+  "keywords": [
+    "trainologym",
+    "diagnostico",
+    "salud"
+  ],
+  "author": "Trainologym",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
